@@ -1,0 +1,511 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>How the Hypercore Protocol Works</title>
+
+    <!-- SEO -->
+    <meta name="Description" content="A fast, scalable, and secure peer-to-peer protocol.">
+    <meta name="keywords" content="decentralization,hypercore,peer-to-peer,p2p,hyperdrive">
+
+    <!-- Social -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@HypercoreProto">
+    <meta name="twitter:creator" content="@HypercoreProto">
+    <meta name="og:title" content="How the Hypercore Protocol Works">
+    <meta name="og:description" content="A fast, scalable, and secure peer-to-peer protocol.">
+    <meta name="twitter:image" content="https://hypercore-protocol.org/images/hypercore-protocol.png">
+
+    
+      
+        <link rel="stylesheet" type="text/css" href="../css/pages/protocol.css">
+      
+    
+    <link rel="stylesheet" type="text/css" href="../fonts/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="narrow">
+    <header class="desktop">
+      <div class="nav-left">
+        <a href="../" title="Home"><img class="logo" src="../images/hypercore-protocol.png"></a>
+        <a class="" href="../guides" title="Guides">Guides</a>
+        <a class="current" href="../protocol" title="Protocol">Protocol</a>
+        <a class="" href="../install" title="Install">Install</a>
+        <a class="" href="../awesome-hacks" title="Awesome Hacks">Awesome Hacks</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://chat.hypercore-protocol.org" title="Hypercore Discord Server"><img class="icon" src="../images/discord-icon.png"></a>
+        <a href="https://twitter.com/hypercoreproto" title="Hypercore Twitter"><img class="icon" src="../images/twitter-icon.png"></a>
+        <a href="https://github.com/hypercore-protocol" title="Hypercore GitHub Org"><img class="icon" src="../images/github-icon.png"></a>
+      </div>
+    </header>
+    <header class="mobile">
+      <a href="../" title="Home"><img class="logo" src="../images/hypercore-protocol.png"></a>
+      <a id="mobile-menu-btn" href="#" title="Nav"><img class="menu" src="../images/icons8/menu-26.png"></a>
+    </header>
+    <div id="mobile-menu">
+      <a class="current" href="../" title="Home">Home</a>
+      <a class="" href="../guides" title="Guides">Guides</a>
+      <a class="current" href="../protocol" title="Protocol">Protocol</a>
+      <a class="" href="../install" title="Install">Install</a>
+      <a class="" href="../awesome-hacks" title="Awesome Hacks">Awesome Hacks</a>
+    </div>
+
+    
+<main>
+<div id="hypercore"><div id="hyperdrive"><div id="hyperswarm">
+  <h1>How the Hypercore Protocol Works</h1>
+  <nav>
+    <a id="core-link" href="#hypercore">Hypercore</a>
+    <a id="drive-link" href="#hyperdrive">Hyperdrive</a>
+    <a id="swarm-link" href="#hyperswarm">Hyperswarm</a>
+  </nav>
+
+  <section id="core">
+    
+<div class="bar">
+  <div style="animation-delay: 0.689s;"></div>
+<div style="animation-delay: 0.727s;"></div>
+<div style="animation-delay: 0.526s;"></div>
+<div style="animation-delay: 0.77s;"></div>
+<div style="animation-delay: 0.46s;"></div>
+<div style="animation-delay: 0.48s;"></div>
+<div style="animation-delay: 0.198s;"></div>
+<div style="animation-delay: 0.813s;"></div>
+<div style="animation-delay: 0.56s;"></div>
+<div style="animation-delay: 0.926s;"></div>
+<div style="animation-delay: 0.339s;"></div>
+<div style="animation-delay: 0.303s;"></div>
+<div style="animation-delay: 0.842s;"></div>
+<div style="animation-delay: 0.172s;"></div>
+<div style="animation-delay: 0.679s;"></div>
+<div style="animation-delay: 0.845s;"></div>
+<div style="animation-delay: 0.406s;"></div>
+<div style="animation-delay: 0.135s;"></div>
+<div style="animation-delay: 0.802s;"></div>
+<div style="animation-delay: 0.456s;"></div>
+<div style="animation-delay: 0.354s;"></div>
+<div style="animation-delay: 0.391s;"></div>
+<div style="animation-delay: 0.235s;"></div>
+<div style="animation-delay: 0.85s;"></div>
+<div style="animation-delay: 0.957s;"></div>
+<div style="animation-delay: 0.912s;"></div>
+<div style="animation-delay: 0.534s;"></div>
+<div style="animation-delay: 0.150s;"></div>
+<div style="animation-delay: 0.810s;"></div>
+<div style="animation-delay: 0.399s;"></div>
+<div style="animation-delay: 0.282s;"></div>
+<div style="animation-delay: 0.955s;"></div>
+<div style="animation-delay: 0.770s;"></div>
+<div style="animation-delay: 0.878s;"></div>
+<div style="animation-delay: 0.670s;"></div>
+<div style="animation-delay: 0.675s;"></div>
+<div style="animation-delay: 0.9s;"></div>
+<div style="animation-delay: 0.835s;"></div>
+<div style="animation-delay: 0.262s;"></div>
+<div style="animation-delay: 0.257s;"></div>
+<div style="animation-delay: 0.385s;"></div>
+<div style="animation-delay: 0.282s;"></div>
+<div style="animation-delay: 0.13s;"></div>
+<div style="animation-delay: 0.304s;"></div>
+<div style="animation-delay: 0.911s;"></div>
+<div style="animation-delay: 0.990s;"></div>
+<div style="animation-delay: 0.164s;"></div>
+<div style="animation-delay: 0.690s;"></div>
+<div style="animation-delay: 0.763s;"></div>
+<div style="animation-delay: 0.705s;"></div>
+<div style="animation-delay: 0.658s;"></div>
+<div style="animation-delay: 0.114s;"></div>
+<div style="animation-delay: 0.975s;"></div>
+<div style="animation-delay: 0.625s;"></div>
+<div style="animation-delay: 0.940s;"></div>
+<div style="animation-delay: 0.455s;"></div>
+<div style="animation-delay: 0.48s;"></div>
+<div style="animation-delay: 0.62s;"></div>
+<div style="animation-delay: 0.410s;"></div>
+<div style="animation-delay: 0.164s;"></div>
+<div style="animation-delay: 0.541s;"></div>
+<div style="animation-delay: 0.92s;"></div>
+<div style="animation-delay: 0.770s;"></div>
+<div style="animation-delay: 0.776s;"></div>
+<div style="animation-delay: 0.645s;"></div>
+<div style="animation-delay: 0.896s;"></div>
+<div style="animation-delay: 0.231s;"></div>
+<div style="animation-delay: 0.476s;"></div>
+<div style="animation-delay: 0.124s;"></div>
+<div style="animation-delay: 0.959s;"></div>
+</div>
+
+    <h2>Hypercore is a distributed append-only log</h2>
+    <p>
+      Hypercore comes with a secure transport protocol, making it easy to build fast and scalable peer-to-peer applications. Think lightweight blockchain crossed with BitTorrent.
+    </p>
+
+    <h3>Append-only logs?</h3>
+    <p>
+      If you are not familiar with append-only logs, they are basically just lists you can only append to. If you think about it in terms of normal array operations, it is a log where you can only call get(index), push(data) and retrieve the log length, but where you can never overwrite old entries.
+    </p>
+    <div class="videogif">
+      <video src="../videos/aol.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <p>
+      Hypercore allows you to quickly distribute these kind of logs in a peer-to-peer fashion. Each peer can choose to download only the section of the log they are interested in, without having to download everything from the beginning.
+    </p>
+    <p>
+      Using append-only logs, Hypercore can easily generate compressed bitfields describing which portions of a log a peer has. This, among other things, helps make the replication protocol light and efficient.
+    </p>
+
+    <h3>Secured by Merkle trees and cryptography</h3>
+    <p>
+      Hypercore verifies log contents by building a Merkle tree using the BLAKE2b-256 hash function. Peers can also use this Merkle tree to only download the parts of the log they are interested in, and redistribute these parts to others.
+    </p>
+    <div class="videogif" style="height: 300px;">
+      <video src="../videos/merkle-trees.mp4" autoplay loop muted playsinline style="margin-top: -150px;"></video>
+    </div>
+    <p>
+      Merkle trees are widely used in many distributed systems. They are normally only used to verify static content, because when content changes the root of the tree changes as well. To support mutable datasets, Hypercore uses asymmetric cryptography to sign the root of the Merkle tree as data is appended to it.
+    </p>
+    <div class="videogif" style="height: 380px;">
+      <video src="../videos/growing-merkle-trees.mp4" autoplay loop muted playsinline style="margin-top: -100px;"></video>
+    </div>
+    <p>
+      Only the owner of the private key can append to the log. But one Hypercore is rarely used on its own -- more powerful, multi-user data structures can be created by combining multiple cores. Hypercore's main purpose is to be a building block in other things.
+    </p>
+  </section>
+
+  <section id="drive">
+    
+<div class="bar">
+  <div style="animation-delay: 0.898s;"></div>
+<div style="animation-delay: 0.828s;"></div>
+<div style="animation-delay: 0.902s;"></div>
+<div style="animation-delay: 0.742s;"></div>
+<div style="animation-delay: 0.640s;"></div>
+<div style="animation-delay: 0.185s;"></div>
+<div style="animation-delay: 0.867s;"></div>
+<div style="animation-delay: 0.274s;"></div>
+<div style="animation-delay: 0.505s;"></div>
+<div style="animation-delay: 0.314s;"></div>
+<div style="animation-delay: 0.990s;"></div>
+<div style="animation-delay: 0.805s;"></div>
+<div style="animation-delay: 0.910s;"></div>
+<div style="animation-delay: 0.476s;"></div>
+<div style="animation-delay: 0.408s;"></div>
+<div style="animation-delay: 0.267s;"></div>
+<div style="animation-delay: 0.728s;"></div>
+<div style="animation-delay: 0.540s;"></div>
+<div style="animation-delay: 0.33s;"></div>
+<div style="animation-delay: 0.390s;"></div>
+<div style="animation-delay: 0.160s;"></div>
+<div style="animation-delay: 0.363s;"></div>
+<div style="animation-delay: 0.632s;"></div>
+<div style="animation-delay: 0.317s;"></div>
+<div style="animation-delay: 0.226s;"></div>
+<div style="animation-delay: 0.827s;"></div>
+<div style="animation-delay: 0.950s;"></div>
+<div style="animation-delay: 0.793s;"></div>
+<div style="animation-delay: 0.374s;"></div>
+<div style="animation-delay: 0.65s;"></div>
+<div style="animation-delay: 0.764s;"></div>
+<div style="animation-delay: 0.744s;"></div>
+<div style="animation-delay: 0.185s;"></div>
+<div style="animation-delay: 0.139s;"></div>
+<div style="animation-delay: 0.839s;"></div>
+<div style="animation-delay: 0.198s;"></div>
+<div style="animation-delay: 0.626s;"></div>
+<div style="animation-delay: 0.984s;"></div>
+<div style="animation-delay: 0.535s;"></div>
+<div style="animation-delay: 0.232s;"></div>
+<div style="animation-delay: 0.886s;"></div>
+<div style="animation-delay: 0.619s;"></div>
+<div style="animation-delay: 0.788s;"></div>
+<div style="animation-delay: 0.750s;"></div>
+<div style="animation-delay: 0.298s;"></div>
+<div style="animation-delay: 0.797s;"></div>
+<div style="animation-delay: 0.586s;"></div>
+<div style="animation-delay: 0.652s;"></div>
+<div style="animation-delay: 0.154s;"></div>
+<div style="animation-delay: 0.847s;"></div>
+<div style="animation-delay: 0.637s;"></div>
+<div style="animation-delay: 0.290s;"></div>
+<div style="animation-delay: 0.300s;"></div>
+<div style="animation-delay: 0.588s;"></div>
+<div style="animation-delay: 0.59s;"></div>
+<div style="animation-delay: 0.112s;"></div>
+<div style="animation-delay: 0.675s;"></div>
+<div style="animation-delay: 0.753s;"></div>
+<div style="animation-delay: 0.320s;"></div>
+<div style="animation-delay: 0.288s;"></div>
+<div style="animation-delay: 0.850s;"></div>
+<div style="animation-delay: 0.714s;"></div>
+<div style="animation-delay: 0.506s;"></div>
+<div style="animation-delay: 0.769s;"></div>
+<div style="animation-delay: 0.457s;"></div>
+<div style="animation-delay: 0.797s;"></div>
+<div style="animation-delay: 0.905s;"></div>
+<div style="animation-delay: 0.150s;"></div>
+<div style="animation-delay: 0.335s;"></div>
+<div style="animation-delay: 0.12s;"></div>
+</div>
+
+    <h2>Hyperdrive is a P2P filesystem</h2>
+
+    <p>
+      Hyperdrive is designed to help you share files quickly and safely, directly from your computer.
+    </p>
+
+    <p>
+      Hyperdrive is built using Hypercores. Using an append-only index you can find only the files you are interested from a large drive in milliseconds -- all P2P.
+    </p>
+
+    <p>
+      By default, readers only download the portions of files they need, on demand. You can stream media from friends without jumping through hoops! Seeking is snappy and there's no buffering.
+    </p>
+
+    <p>
+      If you want to learn more about the code you can see the Node.js implementation in the <a href="https://github.com/mafintosh/hyperdrive">GitHub repository</a>
+    </p>
+
+    <p>
+      If you want to download or share filesystems, we suggest you read on and try out the daemon.
+    </p>
+
+    <h3>How does Hyperdrive work?</h3>
+
+    <p>
+      Hyperdrive indexes filenames into a Hypercore. To avoid having to scan through this entire Hypercore when you want to find a specific file or folder, filenames are indexed using an append-only hash trie, which we call Hypertrie. The hash trie basically functions as a fast append-only key value store with listable folders.
+    </p>
+
+    <div class="videogif">
+      <video src="../videos/trie.mp4" autoplay loop muted playsinline style="margin-top: -100px;"></video>
+    </div>
+
+    <p>
+      If you are looking for a simple database abstraction on top of Hypercore you can also use Hypertrie standalone, outside of Hyperdrive. In you want to learn more about how to use it, we suggest you look at the <a href="https://github.com/mafintosh/hypertrie">Hypertrie repository</a>
+    </p>
+
+    <p>
+      Since it builds on top of the append-only log, it inherits the same guarantees of every change being versioned by default, making it easy to see historical changes and prevent accidental data loss.
+    </p>
+
+    <p>
+      In addition to the Hypertrie, which we refer to as the metadata log, Hyperdrive uses another Hypercore to store the binary file content of each file you insert. This dual-log design makes it easy to replicate or watch only the metadata log, without content, if that is what you are interested in.
+    </p>
+
+    <p>
+      Each entry in the Hypertrie links to the content log to signal where a file's binary data starts and ends. Additionally, the entry contains all the normal POSIX data you'd be interested in, such as modification time, creation time, file modes, etc.
+    </p>
+
+    <h3>Mounts</h3>
+
+    <p>
+      For better composability and collaboration, an entry can also link to a completely different Hyperdrive or Hypercore. We call this feature mounts. Even though it's ostensibly simple, it can be used to build powerful collaborative features.
+    </p>
+
+    <div class="videogif">
+      <video src="../videos/metadata-and-content-and-mounts.mp4" autoplay loop muted playsinline style="margin-top: -100px;"></video>
+    </div>
+
+    <p>
+      Internally we have been using Hyperdrive mounts for a concept we call "groupware", where each user mounts their own drive inside a single shared one, then applications render multi-user views over the group drive. The groupware pattern can be used to build lightweight, Dropbox-like applications, among others.
+    </p>
+
+    <p>
+      We are always exploring new ways to enhance Hyperdrive! If you are interested in collobarating with us always feel free to to open an issue on <a href="https://github.com/mafintosh/hyperdrive">Github</a>, reach out at <a href="https://twitter.com/hypercoreproto">@hypercoreproto</a> or join our <a href="https://discord.com/invite/ga5hxGf">Discord</a>.
+    </p>
+
+  </section>
+
+  <section id="swarm">
+    
+<div class="bar">
+  <div style="animation-delay: 0.488s;"></div>
+<div style="animation-delay: 0.978s;"></div>
+<div style="animation-delay: 0.473s;"></div>
+<div style="animation-delay: 0.611s;"></div>
+<div style="animation-delay: 0.363s;"></div>
+<div style="animation-delay: 0.777s;"></div>
+<div style="animation-delay: 0.419s;"></div>
+<div style="animation-delay: 0.91s;"></div>
+<div style="animation-delay: 0.612s;"></div>
+<div style="animation-delay: 0.590s;"></div>
+<div style="animation-delay: 0.99s;"></div>
+<div style="animation-delay: 0.878s;"></div>
+<div style="animation-delay: 0.687s;"></div>
+<div style="animation-delay: 0.322s;"></div>
+<div style="animation-delay: 0.346s;"></div>
+<div style="animation-delay: 0.381s;"></div>
+<div style="animation-delay: 0.10s;"></div>
+<div style="animation-delay: 0.492s;"></div>
+<div style="animation-delay: 0.844s;"></div>
+<div style="animation-delay: 0.660s;"></div>
+<div style="animation-delay: 0.661s;"></div>
+<div style="animation-delay: 0.148s;"></div>
+<div style="animation-delay: 0.165s;"></div>
+<div style="animation-delay: 0.904s;"></div>
+<div style="animation-delay: 0.357s;"></div>
+<div style="animation-delay: 0.76s;"></div>
+<div style="animation-delay: 0.34s;"></div>
+<div style="animation-delay: 0.456s;"></div>
+<div style="animation-delay: 0.380s;"></div>
+<div style="animation-delay: 0.471s;"></div>
+<div style="animation-delay: 0.503s;"></div>
+<div style="animation-delay: 0.55s;"></div>
+<div style="animation-delay: 0.356s;"></div>
+<div style="animation-delay: 0.112s;"></div>
+<div style="animation-delay: 0.452s;"></div>
+<div style="animation-delay: 0.94s;"></div>
+<div style="animation-delay: 0.694s;"></div>
+<div style="animation-delay: 0.266s;"></div>
+<div style="animation-delay: 0.730s;"></div>
+<div style="animation-delay: 0.599s;"></div>
+<div style="animation-delay: 0.668s;"></div>
+<div style="animation-delay: 0.555s;"></div>
+<div style="animation-delay: 0.845s;"></div>
+<div style="animation-delay: 0.551s;"></div>
+<div style="animation-delay: 0.682s;"></div>
+<div style="animation-delay: 0.938s;"></div>
+<div style="animation-delay: 0.167s;"></div>
+<div style="animation-delay: 0.871s;"></div>
+<div style="animation-delay: 0.264s;"></div>
+<div style="animation-delay: 0.281s;"></div>
+<div style="animation-delay: 0.899s;"></div>
+<div style="animation-delay: 0.889s;"></div>
+<div style="animation-delay: 0.826s;"></div>
+<div style="animation-delay: 0.687s;"></div>
+<div style="animation-delay: 0.111s;"></div>
+<div style="animation-delay: 0.59s;"></div>
+<div style="animation-delay: 0.296s;"></div>
+<div style="animation-delay: 0.747s;"></div>
+<div style="animation-delay: 0.391s;"></div>
+<div style="animation-delay: 0.36s;"></div>
+<div style="animation-delay: 0.710s;"></div>
+<div style="animation-delay: 0.297s;"></div>
+<div style="animation-delay: 0.151s;"></div>
+<div style="animation-delay: 0.470s;"></div>
+<div style="animation-delay: 0.541s;"></div>
+<div style="animation-delay: 0.102s;"></div>
+<div style="animation-delay: 0.155s;"></div>
+<div style="animation-delay: 0.257s;"></div>
+<div style="animation-delay: 0.524s;"></div>
+<div style="animation-delay: 0.203s;"></div>
+</div>
+
+    <h2>Hyperswarm is a DHT for the home</h2>
+
+    <p>
+      Hyperswarm combines a <a href="https://github.com/hyperswarm/dht">Kademlia-based distributed hash table (DHT)</a> for global discovery with MDNS to discover peers on local networks.
+    </p>
+
+    <p>
+      Hyperswarm is part of the Hypercore protocol but can be used standalone as well. You can learn more on the <a href="https://github.com/hyperswarm">Hyperswarm Github organisation</a> and in the main <a href="https://github.com/hyperswarm/hyperswarm">Node.js implementation repository</a>
+    </p>
+
+    <h3>A Kademlia DHT</h3>
+
+    <p>
+      As with many P2P projects, Hyperswarm uses a DHT to discover peers on the internet. Hypercore maintains a hash of its public key, called a "discovery key", that is used as the topic with which peers share their IPs and ports to discover each other.
+    </p>
+
+    <p>
+      Hypercore comes with a capability system wherein each peer has to verify they know the correct public key before they start sharing data. Even if you know a Hypercore's discovery key, you must also know the public key in order to download data from peers.
+    </p>
+
+    <div class="videogif">
+      <video src="../videos/dht.mp4" autoplay loop muted playsinline style="margin-top: -90px;">
+    </div>
+
+    <p>
+      The DHT used in Hyperswarm is based on Kademlia, a UDP-based DHT which is used by many projects, including BitTorrent. You can learn a lot more about Kademlia in <a href="https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf">the Kademlia paper</a>.
+    </p>
+
+    <p>
+      DHTs scale well in general, but are notoriously hard to work with. Hyperswarm employs a series of heuristics to answer queries quickly and garbage collect stale data as fast as possible.
+    </p>
+
+    <p>
+      As a general note, most DHTs (Hyperswarm included) generally expose routing information such as your IP/port to help route requests. Privacy-preserving DHTs are an active research area by many participants in the P2P ecosystem.
+    </p>
+
+    <h3>Distributed Holepunching</h3>
+
+    <p>
+      Ideal P2P networks should be able to connect any two peers together, wherever they are. In practice, this is a challenge due to firewalls which reject incoming connections and NATs which mask your IP. To help “break through” firewalls, a technique called UDP holepunching is used.
+    </p>
+
+    <p>
+      Traditionally UDP holepunching requires the use of centralised servers that are preknown by each peer in a network.
+    </p>
+    <p>
+      Hyperswarm expands on holepunching by making it a first-class feature: any peer in the DHT can help you holepunch to any other peer that it knows about.
+    </p>
+
+    <div class="videogif" style="height: 390px;">
+      <video src="../videos/dht-holepunching.mp4" autoplay loop muted playsinline style="margin-top: -60px;">
+    </div>
+
+    <p>
+      After finding the relevant peers, Hyperswarm utilises the UTP transport protocol, to make reliable connection streams between peers. For non-holepunching cases, TCP is used as well.
+    </p>
+
+    <p>
+      Importantly, Hyperswarm connections are unencrypted -- encryption must be added separately. As an example, once Hyperswarm has established a connection, Hypercore wraps it in a <a href="https://noiseprotocol.org/">Noise protocol</a> stream to add end-to-end encryption.
+    </p>
+
+  </section>
+
+  <nav>
+    <a id="core-link" href="#hypercore">Hypercore</a>
+    <a id="drive-link" href="#hyperdrive">Hyperdrive</a>
+    <a id="swarm-link" href="#hyperswarm">Hyperswarm</a>
+  </nav>
+</div></div></div>
+</main>
+
+    <footer>
+      <div class="patreon-cta">
+        <div class="patreon-cta-inner">
+          <img src="../images/icons8/heart-24-inverted.png">
+          Hypercore Protocol is open-source!
+          <a href="https://www.patreon.com/paul_maf_and_andrew" title="Patreon" target="_blank">Support us on Patreon</a>.
+        </div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-linklists">
+          <div>
+            <h5>Site</h5>
+            <div><a href="../" title="Home">Home</a></div>
+            <div><a href="../guides/" title="Guides">Guides</a></div>
+            <div><a href="../protocol/" title="Protocol">Protocol</a></div>
+            <div><a href="../install/" title="Install">Install</a></div>
+          </div>
+          <div>
+            <h5>Repos</h5>
+            <div><a href="https://github.com/hypercore-protocol/hyperspace" title="Hyperspace">Hyperspace</a></div>
+            <div><a href="https://github.com/hypercore-protocol/cli" title="Hyp CLI">Hyp CLI</a></div>
+            <div><a href="https://github.com/hypercore-protocol/hypercore" title="Hypercore">Hypercore</a></div>
+            <div><a href="https://github.com/hypercore-protocol/hyperdrive" title="Hyperdrive">Hyperdrive</a></div>
+            <div><a href="https://github.com/hypercore-protocol/hyperbee" title="Hyperbee">Hyperbee</a></div>
+            <div><a href="https://github.com/hyperswarm/" title="Hyperswarm">Hyperswarm</a></div>
+          </div>
+          <div>
+            <h5>Links</h5>
+            <div><a href="https://blog.hypercore-protocol.org" title="Blog">Blog</a></div>
+            <div><a href="https://github.com/hypercore-protocol" title="GitHub">GitHub</a></div>
+            <div><a href="https://twitter.com/hypercoreproto" title="Twitter">Twitter</a></div>
+            <div><a href="https://chat.hypercore-protocol.org" title="Discord Chat">Discord Chat</a></div>
+          </div>
+        </div>
+        <div class="copyrights">
+          Icons by <a href="https://icons8.com" title="Icons8">Icons8</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/mobile-nav.js"></script>
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""></noscript>
+  </body>
+</html>
